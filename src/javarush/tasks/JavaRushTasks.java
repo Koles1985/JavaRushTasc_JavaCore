@@ -1,6 +1,6 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_6.task_5_join_right_time_right_place.Solution;
+import javarush.tasks.java_core.level_6.task_9_method_join.Solution;
 
 public class JavaRushTasks {
 
