@@ -1,6 +1,6 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_6.task_9_method_join.Solution;
+import javarush.tasks.java_core.level_6.task_14_airport.Solution;
 
 public class JavaRushTasks {
 
