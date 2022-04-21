@@ -1,6 +1,6 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_6.task_14_airport.Solution;
+import javarush.tasks.java_core.level_6.task_19_one_for_all_all_for_one.Solution;
 
 public class JavaRushTasks {
 
