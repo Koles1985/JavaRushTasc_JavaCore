@@ -1,10 +1,10 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_6.task_32_sequential_output_of_files.Solution;
+import javarush.tasks.java_core.level_7.task_2_together_faster.Solution;
 
 public class JavaRushTasks {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
         Solution solution = new Solution();
     }
     
