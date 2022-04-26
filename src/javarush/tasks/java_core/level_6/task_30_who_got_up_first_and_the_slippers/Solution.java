@@ -31,9 +31,9 @@ public class Solution {
         }
         
         //init threads
-        ReaderThread consoleReader1 = new ReaderThread();
-        ReaderThread consoleReader2 = new ReaderThread();
-        ReaderThread consoleReader3 = new ReaderThread();
+        ReaderThread consoleReader1 = new ReaderThread("#1");
+        ReaderThread consoleReader2 = new ReaderThread("#2");
+        ReaderThread consoleReader3 = new ReaderThread("#3");
         
         consoleReader1.start();
         consoleReader2.start();
@@ -49,7 +49,9 @@ public class Solution {
         System.out.println("#3" + consoleReader3);
         
         try{
-            reader.close();
+            if(reader != null){
+                reader.close();
+            }
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -58,10 +60,24 @@ public class Solution {
     
     public class ReaderThread extends Thread{
         private List<String> result = new ArrayList<>();
+        public ReaderThread(String name){
+            super(name);
+        }
+        
         
         @Override
         public void run(){
-            
+            String newLine;
+            try{
+                while(!currentThread().isInterrupted()){
+                    if((newLine = reader.readLine()) != null){
+                        result.add(newLine);
+                        readStringCount.incrementAndGet();
+                    }
+                }
+            }catch(IOException e){
+                System.out.println(getName() + ": IOException");
+            }
         }
         
         @Override 

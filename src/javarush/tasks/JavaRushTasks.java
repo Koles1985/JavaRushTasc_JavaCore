@@ -1,6 +1,6 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_6.task_29_lets_play.Solution;
+import javarush.tasks.java_core.level_6.task_32_sequential_output_of_files.Solution;
 
 public class JavaRushTasks {
 
