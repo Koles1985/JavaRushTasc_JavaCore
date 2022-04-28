@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package javarush.tasks.java_core.level_7.task_2_together_faster;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Koles
- */
 public class Solution {
     public static int threadCount = 10;
     public static int[] testArray = new int[1000];
