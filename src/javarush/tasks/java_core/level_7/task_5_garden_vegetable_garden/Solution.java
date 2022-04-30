@@ -8,12 +8,28 @@ public class Solution {
 	public Solution() {
 
 	}
-	
-	public class Garden{
-		
+
+	public class Garden {
+
 		public final List<String> fruits = new ArrayList<>();
-		public final List<String> vegatable = new ArrayList<>();
-		
+		public final List<String> vegatables = new ArrayList<>();
+
+		public synchronized void addFruit(int index, String fruit) {
+			fruits.add(index, fruit);
+		}
+
+		public synchronized void removeFruit(int index) {
+			fruits.remove(index);
+		}
+
+		public synchronized void addVegatable(int index, String vegatable) {
+			vegatables.add(index, vegatable);
+		}
+
+		public synchronized void removeVegatable(int index) {
+			vegatables.remove(index);
+		}
+
 	}
 
 }
