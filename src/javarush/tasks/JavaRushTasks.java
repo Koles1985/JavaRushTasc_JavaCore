@@ -1,6 +1,6 @@
 package javarush.tasks;
 
-import javarush.tasks.java_core.level_7.task_10_crude.Solution;
+import javarush.tasks.java_core.level_7.task_11_crude_2.*;
 
 public class JavaRushTasks {
 
